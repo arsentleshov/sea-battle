@@ -4,21 +4,42 @@
 	<title></title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
-
+		.div{
+			display: none;
+			position: absolute;
+		}
+		.div1{
+			display: none;
+			position: absolute;
+			height: 150px;
+			width: 200px;
+			padding-top: 50px;
+			border: 5px solid white;
+			border-radius: 30px;
+			left: 850px;
+			margin-top: 350px;
+		}			
 	</style>
 </head>
 <body>
-	<div class="col-7 bg-light mx-auto ">
+	<div class="col-7 mx-auto gg">
 		<div > 
 			<h1 class="task">Морской бой!</h1>
-			<p class="text-success">Корабль с 4 клетками - 1</p>
-			<p class="text-danger">Корабль с 3 клетками - 2</p>
-			<p class="text-primary">Корабль с 2 клетками - 3</p>
-			<p class="text-warning">Корабль с 1 клетками - 4</p>
+			<h2>Жизней: <span class="nepopal">10</span></h2>
+			<p class="text-success fou">Корабль с 4 клетками - <span class="ship4">1</span></p>
+			<p class="text-danger thre">Корабль с 3 клетками - <span class="ship3">2</span></p>
+			<p class="text-primary tw">Корабль с 2 клетками - <span class="ship2">3</span></p>
+			<p class="text-warning on">Корабль с 1 клетками - <span class="ship1">4</span></p>
 
 		</div>
-		<div style="display: none;">
+		<div class="div">
+
 			<h1>Score: <span class="score">0</span></h1>
+			<h1>Score: <span class="score4">4</span></h1>
+			<h1>Score: <span class="score3">6</span></h1>
+			<h1>Score: <span class="score2">6</span></h1>
+			<h1>Score: <span class="score1">4</span></h1>
+			
 		</div>
 <div class="row">
 			<div class="col-1 px-5 py-3 text-center ">
@@ -59,7 +80,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">А</h4>
+				<h4 class="text-info">A</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -95,7 +116,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Б</h4>
+				<h4 class="text-info">B</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -131,7 +152,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">В</h4>
+				<h4 class="text-info">C</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -167,7 +188,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Г</h4>
+				<h4 class="text-info">D</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -203,7 +224,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Д</h4>
+				<h4 class="text-info">E</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -239,7 +260,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Е</h4>
+				<h4 class="text-info">F</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -275,7 +296,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Ё</h4>
+				<h4 class="text-info">G</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border two">
 				
@@ -311,7 +332,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">Ж</h4>
+				<h4 class="text-info">H</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border two">
 				
@@ -347,7 +368,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">З</h4>
+				<h4 class="text-info">I</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -383,7 +404,7 @@
 <div class="row">
 
 			<div class="col-1 px-5 py-3 text-center ">
-				<h4 class="text-info">И</h4>
+				<h4 class="text-info">J</h4>
 			</div>
 			<div class="col-1 px-5 py-3 border nothing">
 				
@@ -417,66 +438,217 @@
 			</div>
 		</div>
 	</div>
+	<div class="div1 bg-primary mx-auto ">
+	<h1 class="text-center">You Win!</h1>
+		</div>
+		<div class="div1 div2 bg-danger mx-auto ">
+	<h1 class="text-center">You Lose!</h1>
+		</div>
 <script type="text/javascript">
 	    let score = 0;
 	    document.querySelector(".score").innerHTML = score
+	    let score4 = 4
+	    document.querySelector(".score4").innerHTML = score4
+	    let score3 = 6
+	    document.querySelector(".score3").innerHTML = score3
+	    let score2 = 6
+	    document.querySelector(".score2").innerHTML = score2
+	    let score1 = 4
+	    document.querySelector(".score1").innerHTML = score1
+	    let ship1 = 4
+	    document.querySelector(".ship1").innerHTML = 4
+	    let ship2 = 6
+	    document.querySelector(".ship2").innerHTML = 3
+	    let ship3 = 6
+	    document.querySelector(".ship3").innerHTML = 2
+	    let ship4 = 4
+	    document.querySelector(".ship4").innerHTML = 1
+		let nepopal = 10
+	    document.querySelector(".nepopal").innerHTML = 10
+
+
 		let nichego = document.querySelectorAll(".nothing");
 		let one = document.querySelectorAll(".one");
 		let two = document.querySelectorAll(".two");
 		let three = document.querySelectorAll(".three");
 		let four = document.querySelectorAll(".four");
+		let glavn = document.querySelector(".gg")
+		let ff = document.querySelector(".div1")
+		let dd = document.querySelector(".div2")
+		let four4 = document.querySelector(".fou")
+		let three3 = document.querySelector(".thre")
+		let two2 = document.querySelector(".tw")
+		let one1 = document.querySelector(".on")
 
 
 		for(let i=0; i<80; i=i+1) {
 			nichego[i].onclick = function() {
+			console.log(nepopal)
 			nichego[i].style.backgroundImage = "url('1.webp')";
 			nichego[i].style.backgroundSize = "100% 100%";
-				if(score >= 20){
-					alert("winner")
-				}			
-		}
+			nepopal = nepopal - 1
+			document.querySelector(".nepopal").innerHTML = nepopal
+
+			if(nepopal == 9 ){ 
+					alert("Побробуй снова!")
+
+			}
+			if(nepopal == 8 ){ 
+					alert("Не попал!")
+
+			}
+			if(nepopal == 7 ){ 
+					alert("Давай еще раз!")
+
+			}
+			if(nepopal == 6 ){ 
+					alert("Почти!")
+
+			}
+			if(nepopal == 5 ){ 
+					alert("Ну же!")
+
+			}
+			if(nepopal == 4 ){ 
+					alert("Будь осторожен!")
+
+			}
+			if(nepopal == 3 ){ 
+					alert("Проигрыш рядом!")
+
+			}
+			if(nepopal == 2 ){ 
+					alert("Осталось совсем чуть-чуть!")
+
+			}
+			if(nepopal == 1 ){ 
+					alert("Не туда!")
+
+			}
+
+				
+				if(nepopal == 0){ 
+				glavn.style.display = "none"
+				dd.style.display = "block"
+				}
+
+			}
+				
 		}
 		for(let i=0; i<4; i=i+1) {
 			one[i].onclick = function() {
+			console.log(score)
 			score = score + 1
 			document.querySelector(".score").innerHTML = score				
 			one[i].style.background = "yellow"
-				if(score >= 20){
-					alert("winner")
-				}				
-		}
+			score1 = score1 - 1
+			document.querySelector(".score1").innerHTML = score1
+			ship1 = ship1 - 1
+				if(score >= 20){ 
+					glavn.style.display = "none"
+					ff.style.display = "block"
+
+				}
+				if(score1 == 0){ 
+					one1.style.textDecoration = "line-through"
+
+				}
+				if(ship1 == 3){ 
+					document.querySelector(".ship1").innerHTML = 3
+				}
+				if(ship1 == 2){ 
+					document.querySelector(".ship1").innerHTML = 2
+				}	
+				if(ship1 == 1){ 
+					document.querySelector(".ship1").innerHTML = 1
+				}	
+				if(ship1 == 0){ 
+					document.querySelector(".ship1").innerHTML = 0
+				}								
+			}
 		}
 		for(let i=0; i<6; i=i+1) {
+		two[i].onclick = function() {
+			console.log(score)
 			score = score + 1
 			document.querySelector(".score").innerHTML = score			
-			two[i].onclick = function() {
 			two[i].style.background = "blue"
-				if(score >= 20){
-					alert("winner")
-				}				
+			score2 = score2 - 1
+
+	   		document.querySelector(".score2").innerHTML = score2
+	   		ship2 = ship2 - 1
+				if(score >= 20){ 
+					glavn.style.display = "none"
+					ff.style.display = "block"
+
+				}
+				if(score2 == 0){ 
+					two2.style.textDecoration = "line-through"
+
+				}
+				if(ship2 == 4){ 
+					document.querySelector(".ship2").innerHTML = 2
+				}
+				if(ship2 == 2){ 
+					document.querySelector(".ship2").innerHTML = 1
+				}
+				if(ship2 == 0){ 
+					document.querySelector(".ship2").innerHTML = 0
+				}								
+			}
 		}
-		}
-		for(let i=0; i<6; i=i+1) {
-			score = score + 1
-			document.querySelector(".score").innerHTML = score			
+		for(let i=0; i<6; i=i+1){
+
 			three[i].onclick = function() {
+			console.log(score)
+			score = score + 1
+			document.querySelector(".score").innerHTML = score	
 			three[i].style.background = "red"
-				if(score >= 20){
-					alert("winner")
-				}				
-		}
+			score3 = score3 - 1
+			document.querySelector(".score3").innerHTML = score3
+			ship3 = ship3 - 1
+				if(score >= 20){ 
+					glavn.style.display = "none"
+					ff.style.display = "block"
+
+				}
+				if(score3 == 0){ 
+					three3.style.textDecoration = "line-through"
+
+				}
+				if(ship3 == 3){ 
+					document.querySelector(".ship3").innerHTML = 1
+				}	
+				if(ship3 == 0){ 
+					document.querySelector(".ship3").innerHTML = 0
+				}							
+			}
 		}
 		for(let i=0; i<4; i=i+1) {
+		four[i].onclick = function() {
+			console.log(score)
 			score = score + 1
-			document.querySelector(".score").innerHTML = score			
-			four[i].onclick = function() {
+			document.querySelector(".score").innerHTML = score					
 			four[i].style.background = "green"
-				if(score >= 20){
-					alert("winner")
-				}				
-		}
-		}
+			score4 = score4 - 1
+			document.querySelector(".score4").innerHTML = score4
+			ship4 = ship4 - 1
+			
+				if(score >= 20){ 
+					glavn.style.display = "none"
+					ff.style.display = "block"
 
+				}
+				if(score4 == 0){ 
+					four4.style.textDecoration = "line-through"
+
+				}
+
+				if(ship4 == 0){ 
+					document.querySelector(".ship4").innerHTML = 0
+				}
+			}
+		}
 </script>
 </body>
 </html>
